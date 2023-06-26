@@ -6,7 +6,6 @@ import axios from "axios";
 import {Alert, Button, Col, Form, Modal, ModalFooter, Row} from "react-bootstrap";
 import HTMLReactParser from "html-react-parser";
 import {useSelector} from "react-redux";
-import API_BASE_URL from "../../config";
 
 function BoardView() {
 
