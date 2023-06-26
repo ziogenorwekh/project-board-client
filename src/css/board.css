@@ -1,0 +1,129 @@
+.post-top {
+    margin: 1em auto auto;
+    width: 90%;
+}
+
+.post-top .button {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.post-list {
+    margin: 1em auto auto;
+    width: 90%;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+    background-color: white;
+}
+
+.post-list:hover {
+    background-color: #8c8c8c;
+}
+
+.post-list p {
+    margin: 0;
+}
+
+.post-list .title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.post-list .posted-by {
+    text-align: right;
+}
+
+.post-list .username {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    color: #8c8c8c;
+}
+
+.post-list:hover .username {
+    color: white;
+}
+
+.loading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.board {
+
+}
+
+.board .title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.board .username {
+    color: #5b5b5b;
+    font-size: 1.5em;
+}
+
+.board .username:hover {
+    color: #000000;
+    cursor: pointer;
+}
+.board .posted-by {
+    font-size: 1.3em;
+}
+
+.board .contents {
+    font-size: 1.1em;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.comment div {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.ck.ck-editor__editable:not(.ck-editor__nested-editable) {
+    min-height: 400px;
+    margin-bottom: 20px;
+}
+
+.create {
+    margin-top: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+
+.create input {
+    border: #bbbbbb solid 1px;
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+}
+
+.create label {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+}
+
+.create input:focus {
+    outline: none;
+    box-shadow: 0px 0px 3px black;
+}

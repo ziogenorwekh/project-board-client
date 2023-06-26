@@ -1,0 +1,70 @@
+.loading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.data {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.data-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.hr {
+    margin-bottom: 0.3em;
+    margin-right: 0;
+    width: 90%;
+}
+
+.data-list {
+    margin-bottom: 0.3em;
+    margin-right: 0;
+    width: 90%;
+    border: 2px solid #ffbaba;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+    background-color: white;
+}
+
+.data-list:hover {
+    background-color: #ffeded;
+}
+
+.data-list .data-user-username {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.5em;
+    font-family: Consolas,sans-serif;
+    text-align: left;
+}
+
+.data-list .data-user-username:hover {
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.data-list .data-post-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.5em;
+    font-family: Consolas,sans-serif;
+    text-align: left;
+}
+
+
+.data-list .data-post-title:hover {
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
