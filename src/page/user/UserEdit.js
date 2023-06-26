@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import axios from "axios";
 import {useNavigate, useParams} from "react-router-dom";
 import {Alert, Col, Row} from "react-bootstrap";
-import API_BASE_URL from "../../config";
 
 function UserEdit() {
 

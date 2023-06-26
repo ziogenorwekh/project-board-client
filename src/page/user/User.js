@@ -4,7 +4,6 @@ import axios from "axios";
 import "../../css/user.css"
 import {Button, Container, Modal, Row} from "react-bootstrap";
 import {useSelector} from "react-redux";
-import API_BASE_URL from "../../config";
 
 function User() {
 
