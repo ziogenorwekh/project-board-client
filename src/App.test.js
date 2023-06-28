@@ -10,9 +10,10 @@ test('renders learn react link', () => {
 
 test('test api',()=>{
     let response = '';
-    const resp = axios.get(`${process.env.REACT_APP_API}/health-check`)
+    axios.get(`${process.env.REACT_APP_API}/health-check`)
         .then(resp2=>{
-            response = resp2.data;
+            let copy = resp2.data;
+            response = copy;
         })
     expect(response).toEqual('connected');
 })
