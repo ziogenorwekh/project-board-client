@@ -65,8 +65,6 @@ function Join() {
                                 axios.post(`${process.env.REACT_APP_API}/api/users`, JSON.stringify(join), {
                                     headers: {
                                         "Content-Type": `application/json`,
-                                        "Access-Control-Allow-Origin": `${process.env.REACT_APP_API}`,
-                                        "Access-Control-Allow-Headers": "*"
                                     }
                                 }).then(resp => {
                                     if (resp.status === 201) {

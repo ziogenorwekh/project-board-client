@@ -35,7 +35,6 @@ function Login() {
         axios.post(`${process.env.REACT_APP_API}/login`, JSON.stringify(login), {
             headers: {
                 "Content-Type": `application/json`,
-                "Access-Control-Allow-Origin": `${process.env.REACT_APP_API}`,
             }
         }).then(resp => {
             dispatch(setUsername(resp.data.username))
