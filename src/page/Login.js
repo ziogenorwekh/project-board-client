@@ -24,7 +24,7 @@ function Login() {
         localStorage.removeItem('token');
     }
 
-    const handleKeyDown  =(e) =>{
+    const handleKeyDown = (e) => {
         if (e.key === 'Enter') {
             loginAxios()
         }
@@ -33,7 +33,10 @@ function Login() {
     const loginAxios = () => {
         let login = {'email': email, 'password': password}
         axios.post(`${process.env.REACT_APP_API}/login`, JSON.stringify(login), {
-            headers: {"Content-Type": `application/json`}
+            headers: {
+                "Content-Type": `application/json`,
+                "Access-Control-Allow-Origin": `${process.env.REACT_APP_API}`,
+            }
         }).then(resp => {
             dispatch(setUsername(resp.data.username))
             dispatch(setUserId(resp.data.userId));
@@ -70,7 +73,9 @@ function Login() {
                             setPassword(e.target.value)
                         }} className="form-control" onKeyDown={handleKeyDown} placeholder="Enter password"/>
                     </div>
-                    <button type="button" onClick={() => {loginAxios()}} className="btn btn-primary login-button">Login
+                    <button type="button" onClick={() => {
+                        loginAxios()
+                    }} className="btn btn-primary login-button">Login
                     </button>
                     <div className="join-container">
                         <p className="join-text">Don't have an account?</p>
