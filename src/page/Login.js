@@ -32,7 +32,7 @@ function Login() {
 
     const loginAxios = () => {
         let login = {'email': email, 'password': password}
-        axios.post(`${process.env.REACT_APP_API}/login`, JSON.stringify(login), {
+        axios.post(`${process.env.REACT_APP_API}/api/login`, JSON.stringify(login), {
             headers: {
                 "Content-Type": `application/json`,
             }
