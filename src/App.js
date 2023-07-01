@@ -36,7 +36,7 @@ function App() {
                 localStorage.removeItem('token');
             } else {
                 let token = localStorage.getItem('token');
-                axios.get(`/api/users/currents`, {
+                axios.get(`${process.env.REACT_APP_API}/api/users/currents`, {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
